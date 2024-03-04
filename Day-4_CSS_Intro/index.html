@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction To CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal Styling -->
+    <style>
+        /*h1{
+            background-color: red;
+        }
+        h2{
+            color: yellow;
+        }
+        h3{
+            background-color: yellow;
+        }
+        body{
+            background-color: #000000;
+        }*/
+        body{
+            background-color: black;color: white;
+        }
+        /*
+        h1,h2,h3,p,ul{
+            background-color: yellow;
+        }*/
+        .bg{
+            background-color: yellow;
+            color: black;
+        }
+        #batman{
+            background-color: blue;
+        }
+        .superman{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Priority Wise
+        1. Inline Styling
+        2. Internal Styling
+        3. External Styling
+    -->
+
+    <!-- Internal Styling -->
+    <!-- <h1>Introduction To CSS</h1> -->
+    <!-- <h2>Internal Styling</h2> -->
+
+    <!-- Inline Styling -->
+    <!-- <h3 style="background-color: blue;">Inline Styling</h3> -->
+
+    <!-- External Styling -->
+    <!-- <h4>External Styling</h4> -->
+
+
+
+    <!-- Class and ID,ID should be unique-->
+    <h1 class="bg">These Is Superman</h1>
+    <h2 class="bg" id="batman">These Is Spiderman</h2>
+    <p class="bg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, esse!</p>
+    <h3 class="superman">These Is Batman</h3>
+    <ul class="superman">
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>Nodejs</li>
+    </ul>
+</body>
+</html>
