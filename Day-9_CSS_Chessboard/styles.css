@@ -1,0 +1,29 @@
+body{
+    background-color: coral;
+    color: white;
+}
+.box1{
+    background-color: yellow;
+    height: 640px;
+    width: 640px;
+    margin: auto;
+    border: 10px solid gray;
+}
+.black{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    float: left;
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+}
+.White{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    float: left;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
