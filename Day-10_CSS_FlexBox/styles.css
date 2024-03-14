@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    color: white;
+}
+.parent{
+    display: flex;
+}
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 10px;
+    border-radius: 100%;
+    border: 2px solid yellow;
+}
