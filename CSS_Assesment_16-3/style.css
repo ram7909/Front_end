@@ -1,0 +1,115 @@
+body{
+    background-color: black;
+    color: white;
+}
+.youtube_clone .header{
+    display: flex;
+    align-items: center;
+}
+.youtube_clone .header .profile-image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+.youtube_clone .header .discription{
+    margin-left: 10px;
+}
+.youtube_clone .header .discription b{
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.youtube_clone .header .discription #para1{
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(171, 166, 166, 0.866);
+}
+.youtube_clone .header .discription #para2{
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(171, 166, 166, 0.866);
+}
+.youtube_clone .header .discription #para3{
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.youtube_clone .header .discription #text{
+    color: rgb(38, 124, 237);
+}
+.youtube_clone .header .discription #icon{
+    color: white;
+    font-size: 1rem;
+}
+.youtube_clone .header .discription button{
+    background-color: white;
+    color: black;
+    border: none;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.youtube_clone .slide{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+.youtube_clone .slide .items{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 15px 5px;
+    color: rgba(171, 166, 166, 0.866);
+}
+.youtube_clone .slide .items:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.youtube_clone .lpo{
+    display: flex;
+}
+.youtube_clone .lpo .items{
+    margin: 20px 10px 10px ;
+}
+.youtube_clone .lpo .items button{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 9px;
+    background-color: rgba(171, 166, 166, 0.171) ;
+}
+.youtube_clone .lpo .items button:hover{
+    background-color: white;
+    color: black;
+}
+
+.youtube_clone .video{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.youtube_clone .video .main{
+    height: 15rem;
+    width: 20rem;
+}
+.youtube_clone .video .main .image img{
+    border-radius: 10px;
+    height:10rem;
+    width: 20rem;
+}
+.youtube_clone .video .main .des{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgba(171, 166, 166, 0.866);
+}
+.youtube_clone .video .main .mn{
+    display: flex;
+}
+
+.youtube_clone .video .main .material-symbols-outlined{
+    font-size: 1.4rem;
+    
+}
