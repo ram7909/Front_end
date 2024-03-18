@@ -14,6 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .side_bar{
     height: 100vh;
@@ -28,6 +29,10 @@ body{
     /* justify-content: center; */
     align-items: center;
     font-size: 1.5rem;
+}
+.side_bar .items:hover{
+    background-color: rgba(182, 179, 179, 0.111);
+    border-radius: 5px;
 }
 .side_bar .items .material-symbols-outlined{
     margin-right: 10px;
@@ -44,23 +49,194 @@ body{
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 .post_section .insta_story .items{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .post_section .insta_story .items img{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     border-radius: 100%;
     /* border:2px solid yellow; */
     outline: 2px solid #c201dd;
     outline-offset: 3px;
 }
+.post_section .insta_story .items #username{
+    margin-top: 10px;
+}
+.post_section .postarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.post_section .postarea .items{
+    margin-top: 10px;
+    height: 80vh;
+    width: 32rem;
+    /* background-color: gray; */
+}
+.post_section .postarea .items .head{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
 
+}
+.post_section .postarea .items .head p{
+    margin-left: 15px;
+}
+.post_section .postarea .items .head #material-symbols-outlined{
+    margin-top: 0px;
+    margin-left: 10px;
+    align-items: center;
+    color: blue;
+}
+.post_section .postarea .items .head .material-symbols-outlined{
+    margin-left: 19rem;
+}
+.post_section .postarea .items .head img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    /* border:2px solid yellow; */
+    outline: 2px solid #c201dd;
+    outline-offset: 2px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.post_section .postarea .items .post{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post_section .postarea .items .post img{
+    height: 25rem;
+    width: 22rem;
+    margin-top: 20px;
+}
+.post_section .postarea .items .footer .material-symbols-outlined{
+    font-size: 1.5rem;
+    margin: 10px 10px 10px;
+}
+.post_section .postarea .items .footer #fav{
+    margin-left: 19rem;
+}
+.post_section .postarea .items .footer p{
+    font-size: 0.9rem;
+    margin-left: 12px;
+}
+.post_section .postarea .items .comment input{
+    border: none;
+    width: 20rem;
+    border-bottom: 1px solid lightgray;
+    background-color: black;
+    color: white;
+}
+.post_section .postarea .items .comment .material-symbols-outlined{
+    margin-left: 7.8rem;
+}
 .right_bar{
     height: 100vh;
     width: 23%;
     /* background-color: chocolate; */
+}
+.right_bar .head{
+    display: flex;
+    /* justify-content:center; */
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.right_bar .head .profile-image img{
+    margin-top: 30px;
+    margin-left: 10px ;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.right_bar .head .username-name{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-family:Arial, Helvetica, sans-serif
+}
+.right_bar .head .username-name #gap{
+    margin-top: 5px;
+    color: rgba(201, 190, 190, 0.71);
+}
+.right_bar .head .right-head{
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 18px;
+    color: rgb(99, 151, 240);
+}
+.right_bar .head .right-head p{
+    margin-top: 20px;
+}
+.right_bar .suggestion-bar .head{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+.right_bar .suggestion-bar .see-all{
+    margin-left: 92px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.887);
+}
+.right_bar .suggestion-bar .head .suggest{
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(201, 190, 190, 0.71);;
+}
+.right_bar .main{
+    /* display: flex; */
+    /* align-items: center; */
+}
+.right_bar .main .user-name .profile-image img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.right_bar .main .user-name .username-name{
+    margin-left: 10px;
+}
+.right_bar .main .user-name{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.right_bar .main .user-name .right-head{
+    margin-left: 45px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(99, 151, 240);
+}
+.right_bar .main .user-name .username-name p{
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;   
+}
+.right_bar .main .user-name .username-name #gap{
+    margin-top: 5px;
+    color: rgba(201, 190, 190, 0.71);
+}
+.right_bar .about-us .content{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 0.7rem;
+    color: rgba(201, 190, 190, 0.71);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right_bar .about-us .content:hover{
+    border-bottom: 1px solid rgba(201, 190, 190, 0.71) ;
 }
