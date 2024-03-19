@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: white;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box .main{
+    display: flex;
+    height: 250px;
+    width: 230px;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: gray;
+    flex-direction: column;
+}
+.box .main .par{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .main .par .items{
+    height: 150px;
+    width: 230;
+}
+.box .main .content{
+    height: 100px;
+    width: 230px;
+}

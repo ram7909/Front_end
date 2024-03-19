@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+/* convert block element to inline element */
+h1{
+    height: 200px;
+    background-color: blue;
+    display: inline;
+}
+
+
+/* convert inline element to block element */
+span{
+    background-color: blue;
+    height: 200px;
+    width: 400px;
+    /* display: block; */
+    display: inline-block;
+}
