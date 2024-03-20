@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .main .box img{
+            height: 300px;
+            width: 180px;
+            border-radius: 10px;
+            border: 3px solid blue;
+        }
+
+        .box{
+            position: relative;
+        }
+
+        .main .box2 img{
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            border: 2px solid yellow;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+
+        .nav {
+            display: flex;
+            width: 100%;
+            background-color: blue;
+        }
+
+        .items {
+            padding: 20px;
+        }
+
+        .items:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="items">Home</div>
+        <div class="items">About</div>
+        <div class="items">Contact</div>
+    </div>
+    <br><br>
+
+
+    <div class="main">
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2023/12/04/05/54/ferris-wheel-8428738_640.jpg" alt="">
+            <div class="box2">
+                <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2023/12/04/05/54/ferris-wheel-8428738_640.jpg" alt="">
+            <div class="box2">
+                <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2023/12/04/05/54/ferris-wheel-8428738_640.jpg" alt="">
+            <div class="box2">
+                <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_640.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2023/12/04/05/54/ferris-wheel-8428738_640.jpg" alt="">
+            <div class="box2">
+                <img src="https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_640.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
