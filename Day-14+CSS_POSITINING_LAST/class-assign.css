@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    height: 500vh;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.nav p{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav input{
+    margin-left: 48rem;
+    padding: 5px;
+    background-color: black;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+.nav button{
+    margin-left: 1rem;
+    padding: 5px;
+    color: green;
+    background-color: black;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.main{
+    margin-top: 7rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.foot{
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
