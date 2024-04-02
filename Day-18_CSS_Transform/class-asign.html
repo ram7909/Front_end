@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Transform</title>
+    <title> CSS - Transform & Transition</title>
     <style>
-        body {
+        body{
             background-color: black;
             color: white;
         }
+        .box img{
+            height: 200px;
+            width: 200px;
+            border: 3px solid blue;
+            transition: width 3s, transform 2s;
+        }
         .box{
-            display: flex;
+            display: grid;
             justify-content: center;
             align-items: center;
-            background-color: blue;
-            height: 200px;
-            width: 200px;
-            transition: width 5s, transform 3s;
-            
-            border: 3px solid blue;
-            z-index: 2;
+            height: 90vh;
         }
-        .box:hover{
-            transform: translate(100px,50px);
+        .box img:hover{
             transform: scale(2);
-            border-style: dotted;
-            border-color: yellow;
-            z-index: 5;
-        }
-        img{
-            height: 200px;
-            width: 200px;
+            border: 3px dotted yellow;
         }
     </style>
 </head>
-
 <body>
-        <div class="box">
-            <div class="img">
-            <img src="https://cdn.pixabay.com/photo/2023/06/05/02/01/starry-sky-8041247_640.jpg" alt="">
-            </div>
-        </div>
+    <div class="box">
+        <img src="https://cdn.pixabay.com/photo/2023/12/17/20/31/car-8454879_640.jpg" alt="Image">
+    </div>
 </body>
-
 </html>
