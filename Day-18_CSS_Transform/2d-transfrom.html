@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .box img {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .box-1 img {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .box-2 img {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .box-3 img {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .box img:hover {
+            /* 50px, 100px
+               x-axis, y-axis */
+            transform: translate(200px, 50px);
+            /* transform: rotate(45deg); */
+            /* transform: scalex(2); */
+            /* transform: skew(45deg); */
+        }
+
+        .box-1 img:hover {
+            transform: rotate(45deg);
+        }
+
+        .box-2 img:hover {
+            transform: scale(1.2);
+        }
+
+        .box-3 img:hover {
+            transform: skew(30deg);
+        }
+        .container{
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2023/06/05/02/01/starry-sky-8041247_640.jpg" alt="">
+        </div>
+        <div class="box-1">
+            <img src="https://cdn.pixabay.com/photo/2023/06/05/02/01/starry-sky-8041247_640.jpg" alt="">
+        </div>
+        <div class="box-2">
+            <img src="https://cdn.pixabay.com/photo/2023/06/05/02/01/starry-sky-8041247_640.jpg" alt="">
+        </div>
+        <div class="box-3">
+            <img src="https://cdn.pixabay.com/photo/2023/06/05/02/01/starry-sky-8041247_640.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
