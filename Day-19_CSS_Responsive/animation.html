@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .box{
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            /* animation-name: superman ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;*/
+            position: relative; 
+            animation-name: spiderman ;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        /* @keyframes superman {
+            to{
+                background-color: blueviolet;
+                height: 100px;
+                width: 100px;
+            }
+            from{
+                background-color: yellow;
+                height: 200px;
+                width: 300px;
+                border: 2px solid blue ;
+                transform: translate(100px,100px);
+                top: 200px;
+            }
+        } */
+
+        @keyframes spiderman {
+            0%{
+                left: 0px;
+                top: 0px;
+                background-color: yellow;
+                border: 5px solid red;
+            }
+            25%{
+                left: 300px;
+                top: 0px;
+                background-color: green;
+                border: 4px solid white;
+            }
+            50%{
+                left: 300px;
+                top: 350px;
+                background-color: blue;
+                border: 3px solid yellow;
+            }
+            75%{
+                top: 350px;
+                left: 0px;
+                background-color: aqua;
+                border: 6px solid red;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                background-color: yellow;
+                border: 5px solid red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

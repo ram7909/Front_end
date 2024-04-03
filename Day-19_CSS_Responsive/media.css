@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px){
+    body{
+        background-color: red;
+    }
+    .box{
+        background-color: white;
+        color: black;
+    }
+    .d-none{
+        display: none;
+    }
+}
+@media  screen and  (max-width:600px){
+    body{
+        background-image: url('https://cdn.pixabay.com/photo/2023/12/17/20/31/car-8454879_640.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}
+@media  screen and  (max-width:500px){
+    .container{
+        flex-direction: column;
+    }
+    .d-none{
+        display: block;
+    }
+    
+}
