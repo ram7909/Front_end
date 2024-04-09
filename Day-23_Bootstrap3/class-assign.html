@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+        .img img {
+            height: 60vh;
+            width: 70vw;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-white">
+    <div class="box">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center img">
+                        <img src="https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268_640.jpg"
+                            class="d-block" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center img">
+                        <img src="https://cdn.pixabay.com/photo/2024/02/14/13/13/hamburg-8573427_640.jpg"
+                            class="d-block" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center img">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/29/09/16/architecture-1868667_640.jpg"
+                            class="d-block" alt="...">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="box-1 d-flex justify-content-center align-items-center mt-3">
+        <div class="card m-5 p-2 bg-dark text-white" style="width: 18rem; border: 2px solid yellow;">
+            <div class="d-flex justify-content-center align-items-center">
+            <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" class="card-img-top" alt="..." style=" border: 2px solid yellow; border-radius: 5px;"></div>
+            <div class="card-body">
+              <h5 class="card-title">First Card</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+
+
+          <div class="card m-5 p-2 bg-dark text-white" style="width: 18rem; border: 2px solid yellow;">
+            <div class="d-flex justify-content-center align-items-center">
+            <img src="https://cdn.pixabay.com/photo/2017/10/12/22/17/business-2846221_640.jpg" class="card-img-top" alt="..." style=" border: 2px solid yellow; border-radius: 5px;"></div>
+            <div class="card-body">
+              <h5 class="card-title">Second Card</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+
+          <div class="card m-5 p-2 bg-dark text-white" style="width: 18rem; border: 2px solid yellow;">
+            <div class="d-flex justify-content-center align-items-center">
+            <img src="https://cdn.pixabay.com/photo/2015/06/24/15/45/hands-820272_640.jpg" class="card-img-top" alt="..." style=" border: 2px solid yellow; border-radius: 5px;"></div>
+            <div class="card-body">
+              <h5 class="card-title">Third Card</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+
+        <script>
+            const myCarouselElement = document.querySelector('#carouselExample')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})
+        </script>
+
+</body>
+
+</html>
