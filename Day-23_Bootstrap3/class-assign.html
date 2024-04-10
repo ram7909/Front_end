@@ -17,7 +17,7 @@
 
 <body class="bg-dark text-white">
     <div class="box">
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide"  data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center align-items-center img">
@@ -100,7 +100,7 @@
             const myCarouselElement = document.querySelector('#carouselExample')
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 2000,
+  interval: 500,
   touch: false
 })
         </script>
