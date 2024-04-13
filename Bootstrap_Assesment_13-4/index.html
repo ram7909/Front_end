@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .ght{
+            height: 90vh;
+            width: 100vw;
+            background-color: rgba(47, 46, 46, 0.595);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .ght h5{
+            color: gray;
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+        }
+        footer li{
+            list-style: none;
+        }
+        footer li:nth-child(1){
+            font-weight: 600;
+            font-size: 20px;
+        }
+    </style>
+  </head>
+  <body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#"><span class="material-symbols-outlined">
+            stars
+            </span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-center aling-items-center" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-center aling-items-center">
+              <li class="nav-item px-4">
+                <a class="nav-link active text-light" aria-current="page" href="./tour.html">Tour</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active text-light" aria-current="page" href="./product.html">Product</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active text-light" aria-current="page" href="./feature.html">Features</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active text-light" aria-current="page" href="./enter.html">Enterprise</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active text-light" aria-current="page" href="./support.html">Support</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active text-light" aria-current="page" href="./price.html">Pricing</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active text-light" aria-current="page" href="./cart.html"><span class="material-symbols-outlined">
+                    shopping_cart
+                    </span></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="ght">
+        <h1>Designed for engineers</h1>
+        <h5>Build anything you want to Aperture</h5>
+        <a href="#">Learn more &gt; Buy &gt;</a>
+      </div>
+
+      <div class="cont m-3">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;font-size: 50px;">Another Heading</h5>
+              <p class="card-text"style="font-size:20px; text-align: center;">And an even wittier subheading</p>
+              <div class="images" style="height: 250px;width: 400px;background-color: white;border-top-left-radius: 10px;margin: auto; border-top-right-radius: 10px;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+            <div class="card bg-secondary text-dark">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;font-size: 50px;">Another Heading</h5>
+                <p class="card-text"style="font-size:20px; text-align: center;">And an even wittier subheading</p>
+                <div class="images bg-dark" style="height: 250px;width: 400px;background-color: white;border-top-left-radius: 10px;margin: auto; border-top-right-radius: 10px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;font-size: 50px;">Another Heading</h5>
+                <p class="card-text"style="font-size:20px; text-align: center;">And an even wittier subheading</p>
+                <div class="images bg-dark" style="height: 250px;width: 400px;background-color: white;border-top-left-radius: 10px;margin: auto; border-top-right-radius: 10px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-primary text-light">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;font-size: 50px;">Another Heading</h5>
+                <p class="card-text"style="font-size:20px; text-align: center;">And an even wittier subheading</p>
+                <div class="images" style="height: 250px;width: 400px;background-color: white;border-top-left-radius: 10px;margin: auto; border-top-right-radius: 10px;"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer style="height: 250px;width:100vw;" class="bg-dark text-light py-4">
+        <ul>
+            <li><span class="material-symbols-outlined">
+                stars
+                </span></li>
+            <li>&copy; 2017-2024</li>
+        </ul>
+        <ul>
+            <li>Features</li>
+            <li>Cool stuff</li>
+            <li>Random feature</li>
+            <li>Team feature</li>
+            <li>Stuff for developer</li>
+            <li> Another one</li>
+            <li>last time</li>
+        </ul>
+        <ul>
+            <li>Resources</li>
+            <li>Resource Name</li>
+            <li>Resource</li>
+            <li>Another resource</li>
+            <li>Final resource</li>
+        </ul>
+        <ul>
+            <li>Resources</li>
+            <li>Business</li>
+            <li>Education</li>
+            <li>Government</li>
+            <li>Gaming</li>
+        </ul>
+        <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Locations</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
