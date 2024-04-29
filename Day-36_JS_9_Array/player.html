@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Playlist</title>
+<style>
+    .container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="youtubeInput" placeholder="Paste YouTube link here">
+    <button onclick="addVideo()">Add</button>
+    <ul id="videoList"></ul>
+    <div id="player"></div>
+  </div>
+  <script >function addVideo() {
+    var inputField = document.getElementById("youtubeInput");
+    var videoUrl = inputField.value;
+    if (videoUrl !== "") {
+      var videoList = document.getElementById("videoList");
+      var listItem = document.createElement("li");
+      listItem.textContent = videoUrl;
+      listItem.onclick = function() {
+        loadVideo(videoUrl);
+      };
+      videoList.appendChild(listItem);
+      inputField.value = "";
+    }
+  }
+  
+  function loadVideo(videoUrl) {
+    var videoId = videoUrl.split("v=")[1];
+    var player = document.getElementById("player");
+    player.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+  }
+  </script>
+</body>
+</html>
