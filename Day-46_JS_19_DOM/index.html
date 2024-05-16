@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        img{
+            border: 2px solid orange;
+        }
+        div{
+            text-align: center;
+        }
+        button{
+            margin-top: 20px;
+            background-color: blue;
+            color: green;
+            border:1px solid white;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Flower</h1>
+        <img src="https://cdn.pixabay.com/photo/2022/11/07/21/31/rose-7577265_640.jpg" alt="" onmouseover="changeImage()" onmouseleave="orgImg()">
+        <br>
+        <button onclick="changeDark()">Dark Mode</button>
+        <button onclick="changeLight()">Light Mode</button>
+    </div>
+
+    <!-- <script src="index.js"></script> -->
+    <script src="event.js"></script>
+</body>
+</html>
