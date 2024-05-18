@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="currency">
+        <h2>Currency Convertor</h2>
+        <p>Enter INR</p>
+        <input type="text" id="currency" onchange="getValue()">
+        <p>Enter DIHRAM</p>
+        <input type="text" id="dir" onchange="getValue()">
+        <h1 id="result"></h1>
+        <button id="usd">INR -> USD</button>
+        <button id="yen">INR -> YEN</button>
+        <button id="euro">INR -> EURO</button>
+        <button id="dihram">DIHRAM -> INR</button>
+    </div>
+
+    <div class="calculator">
+        <h1>Age Calculator</h1>
+    <label for="dob">Enter your date of birth:</label>
+    <input type="date" id="dob" name="dob">
+    <button id="calculateAgeButton">Calculate Age</button>
+    <p id="result1"></p>
+    </div>
+
+    <div class="degree">
+        <h2>Degree To Fehrenite Convertor</h2>
+        <p>Enter Degree Celcius</p>
+        <input type="text" id="degree" onchange="getValue()">
+        <h1 id="degresult"></h1>
+        <button id="degreee">Degree -> Fahrenheit</button>
+    </div>
+
+    <div class="sici">
+        <h2>Simple and Compound Interest Calculator</h2>
+    <p>Enter Principle Amount</p>
+    <input type="text" id="principle" onchange="getValue()">
+    <p>Enter Rate Interest</p>
+    <input type="text" id="rate" onchange="getValue()">
+    <p>Enter Time (In Years)</p>
+    <input type="text" id="time" onchange="getValue()">
+
+    <h2 id="sici"></h2>
+    <button id="si">Simple Interest</button>
+    <button id="ci">Compound Interest</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
