@@ -1,6 +1,6 @@
 let inr,dir,degree,p,r,t
 const getValue = () =>{
-    inr = parseFloat(document.querySelector('#currency').value);
+    inr = parseInt(document.querySelector('#currency').value);
     dir = parseFloat(document.querySelector('#dir').value);
     degree = parseFloat(document.querySelector('#degree').value);
     p = parseFloat(document.querySelector('#principle').value);
@@ -8,7 +8,7 @@ const getValue = () =>{
     t = parseFloat(document.querySelector('#time').value);
 }
 document.querySelector('#usd').addEventListener('click',()=>{
-    document.querySelector('#result').innerText = inr*0.12
+    document.querySelector('#result').innerText = 0.12*inr
 })
 document.querySelector('#yen').addEventListener('click',()=>{
     document.querySelector('#result').innerText = inr*1.87
