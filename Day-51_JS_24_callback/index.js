@@ -44,8 +44,8 @@ const mysal = (inhand,callback)=>{
     for (let key in result) {
         totalpercentage += result[key]
     }
-    deducSal = (inhand*totalpercentage)/100;
-    remainSal = inhand - deducSal;
+    let deducSal = (inhand*totalpercentage)/100;
+    let remainSal = inhand - deducSal;
     console.log("Remaining Salary",remainSal);
 }
 const deduction = ()=>{
