@@ -6,6 +6,6 @@ const sum = (arr,target) => {
     }
 }
 
-let arr = [2, 1, 8, 11]
+let arr = [2, 1, 6, 0, 30,5,8,9,3]
 const target = 9;
 let result = sum(arr,target)
