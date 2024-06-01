@@ -5,6 +5,8 @@ class Batsman {
         this.runs = runs;
         this.four = four;
         this.six = six;
+    }
+    inital = ()=>{
         this.update = 0;
     }
     updateRun=()=>{
@@ -22,3 +24,4 @@ class Batsman {
 let batsman = new Batsman("Virat","Kohli",420,10,6)
 batsman.updateRun();
 batsman.batsmanInfo();
+batsman.inital();

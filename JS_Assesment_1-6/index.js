@@ -6,6 +6,8 @@ class Books {
         this.publisher = publisher;
         this.price = price;
         this.numberOfCopy = numberOfCopy;
+    }
+    initial = ()=>{
         this.issue = 0;
     }
     issueBook = ()=>{
@@ -37,6 +39,7 @@ class Books {
     }
 }
 let book = new Books(10,"Ramayan","C. Rajagopalchari","Bhartiya Vidhya Bhavan","500rs",5)
+book.initial();
 book.issueBook();
 book.display();
 book.return();
