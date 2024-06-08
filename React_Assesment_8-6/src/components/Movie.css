@@ -1,0 +1,21 @@
+.main {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie {
+    padding: 20px 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color:rgba(128, 128, 128, 0.2);
+    border-radius: 30px;
+}
+
+.movie img{
+    height: 300px;
+    width: 500px;
+}
