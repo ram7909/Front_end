@@ -1,0 +1,88 @@
+.container{
+    color: white;
+}
+hr{
+    width: 40%;
+    color: yellow;
+}
+.head-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.email-num{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.email{
+    display: flex;
+    align-items: start;
+    justify-content:center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.email:hover{
+    background-color: white;
+    color: black;
+}
+.email p:nth-child(2){
+    margin-top: -15px;
+}
+.num{
+    display: flex;
+    align-items: start;
+    justify-content:center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.num p:nth-child(2){
+    margin-top: -15px;
+}
+.num:hover{
+    background-color: white;
+    color: black;
+}
+.add-des{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 20px;
+}
+.add{
+    display: flex;
+    align-items: start;
+    justify-content:center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.add p:nth-child(2){
+    margin-top: -15px;
+}
+.add:hover{
+    background-color: white;
+    color: black;
+}
+.des{
+    display: flex;
+    align-items: start;
+    justify-content:center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.des p:nth-child(2){
+    margin-top: -15px;
+}
+.des:hover{
+    background-color: white;
+    color: black;
+}
