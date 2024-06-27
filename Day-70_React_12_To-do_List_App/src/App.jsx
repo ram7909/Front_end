@@ -7,13 +7,15 @@ const App = () => {
     {id:2,title:'Superman',description:'Salman Ka Fan'},
   ]);
 
+  const [editId, setEditId] = useState("")
+  console.log("edit id:",editId);
   const deleteItem = (id)=>{
     setData(data.filter((e)=>e.id != id))
   }
   return (
     <>
-      <Form setData={setData} data={data} />
-      <ShowData data={data} deleteItem={deleteItem} />
+      <Form setData={setData} data={data} editId={editId} setEditId={setEditId} />
+      <ShowData data={data} deleteItem={deleteItem} setEditId={setEditId} />
     </>
   )
 }

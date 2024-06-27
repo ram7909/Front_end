@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ShowData = ({data,deleteItem}) => {
+const ShowData = ({data,deleteItem,setEditId}) => {
   return (
     <div style={{width:'650px',margin:'auto'}}>
         {data?.map((e)=>
@@ -8,7 +8,7 @@ const ShowData = ({data,deleteItem}) => {
                 <h2>{e.id}</h2>
                 <h3>{e.title}</h3>
                 <p>{e.description}</p>
-                <button type="button" className="btn btn-warning mx-2">Edit</button>
+                <button type="button" onClick={()=>setEditId(e.id)} className="btn btn-warning mx-2">Edit</button>
                 <button type="button" onClick={()=> deleteItem(e.id)} className="btn btn-primary mx-2">Delete</button>
             </div> 
         )}
