@@ -1,0 +1,22 @@
+.story{
+    width: 800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 1px solid gray;
+}
+.items img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    outline-offset: 2px;
+    outline: 2px solid rgb(221, 34, 134);
+    
+}
+.items p{
+    text-align: center;
+}
+.cb{
+    border: 1px solid gray;
+}
