@@ -6,6 +6,7 @@ import Career from './pages/Career'
 import Contact from './pages/Contact'
 import Team from './pages/Teams'
 import Navbar from './components/Navbar'
+import Product_Detail from './pages/Product_Detail'
 const App = () => {
   return (
     <Router>
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/career' element={<Career />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/team' element={<Team />} />
+        <Route path='/product/:id' element={<Product_Detail />}/>
       </Routes>
     </Router>
   );

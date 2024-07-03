@@ -1,19 +1,25 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import { arr } from '../../data'
 const Product = () => {
 
-  const arr = [
-    { id: 1, title: 'iphone-18', des: 'best phone', img: 'https://cdn.pixabay.com/photo/2016/12/28/19/12/iphone-1936818_640.png' },
-    { id: 2, title: 'iphone-19', des: 'second best phone', img: 'https://cdn.pixabay.com/photo/2020/12/14/09/58/smartphone-5830488_640.png' },
-    { id: 3, title: 'iphone-20', des: 'third best phone', img: 'https://cdn.pixabay.com/photo/2019/03/23/19/57/smartphone-4076145_640.png' }
-  ]
-
   return (
-    <div style={{textAlign:'center',margin:'auto',width:'600px'}} >
-        {arr.map((data)=> <div key={data.id} style={{backgroundColor:'green',margin:'30px',padding:'10px',borderRadius:'20px',border:'4px solid blue'}}>
-          <img src={data.img} alt="" style={{width:'250px',border:'2px solid yellow',borderRadius:'20px'}} />
+    <div style={{
+      textAlign: 'center',
+      margin: 'auto',
+      width: '600px'
+    }} >
+      {arr.map((data) =>
+        <Link
+          to={`/product/${data.id}`}
+          key={data.id}
+          style={{ backgroundColor: 'green', margin: '30px', padding: '10px', borderRadius: '20px', border: '4px solid blue', textDecoration: 'none', color: 'white' }}>
+          <img
+            src={data.img}
+            alt="alt"
+            style={{ width: '250px', border: '2px solid yellow', borderRadius: '20px' }} />
           <h2>{data.title}</h2>
-        </div>)}
+        </Link>)}
     </div>
   )
 }
