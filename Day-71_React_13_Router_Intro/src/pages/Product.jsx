@@ -1,14 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import { arr } from '../../data'
 const Product = () => {
+  const navigate =  useNavigate();
 
   return (
     <div style={{
       textAlign: 'center',
       margin: 'auto',
       width: '600px'
-    }} >
+    }} > 
+    <button onClick={()=>navigate('/career')}>Navigate To About Page</button>
       {arr.map((data) =>
         <Link
           to={`/product/${data.id}`}
@@ -18,6 +20,7 @@ const Product = () => {
             src={data.img}
             alt="alt"
             style={{ width: '250px', border: '2px solid yellow', borderRadius: '20px' }} />
+            
           <h2>{data.title}</h2>
         </Link>)}
     </div>
