@@ -1,32 +1,47 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const Profile = () => {
+const Profile = ({ name, email, password }) => {
 
     const navigate = useNavigate()
-  return (
-    <>
-    <div className="form">
-                <form className='col-md-4'>
-                    <h2 style={{textAlign:'center'}}>Profile</h2>
-                    <div class="mb-3">
-                        <label for="exampleName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleName"/>
+    return (
+        <>
+            <div className="container" style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginTop:'50px'
+            }}>
+                <div className="details" style={{
+                    width: '400px',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexDirection:'column',
+                    gap:'20px',
+                    border:'2px solid yellow',
+                    borderRadius:'15px',
+                    padding:'15px',
+                    backgroundColor:'rgba(171, 170, 170, 0.2)',
+                }}>
+                    <h1 style={{ textAlign: 'center' }}>Profile</h1>
+                    <div className="name">
+                        <h4>Name : {name} </h4>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"/>
+                    <div className="email">
+                        <h4>Email : {email} </h4>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                    <div className="password">
+                        <h4>Password : {password} </h4>
                     </div>
-                    <button onClick={()=>navigate('/admin')} type="submit" class="btn btn-primary">Edit</button>
-                </form>
+                    <div className="btn">
+                        <button onClick={() => navigate('/admin')} type="submit" className="btn btn-primary" style={{width:'50%'}}>Edit Profile</button>
+                    </div>
+                    
+                </div>
             </div>
-    
-    </>
-  )
+
+        </>
+    )
 }
 
 export default Profile
