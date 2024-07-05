@@ -37,7 +37,7 @@ const Admin = ({ name, email, password, setEmail, setName, setPassword }) => {
                             <input type="password" className="form-control" id="exampleInputPassword1" value={password} onChange={(e) => setPassword(e.target.value)} />
                         </div>
                         <div className="btn">
-                            <button onClick={() => navigate('/profile')} type="submit" className="btn btn-primary">Profile</button>
+                            <button onClick={() => navigate('/profile')} type="submit" className="btn btn-primary">Save</button>
                         </div>
                     </form>
                 </div>
