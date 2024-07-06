@@ -1,0 +1,18 @@
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px;
+    background-color: #270858;
+}
+.head .mid input{
+    width: 500px;
+    padding: 5px;
+}
+.head .mid input:focus{
+    outline: none;
+}
+.head .left{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
