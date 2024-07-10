@@ -1,8 +1,15 @@
-import React from 'react'
-
-const MoneyState = () => {
+import React, { useState } from 'react'
+import MoneyContext from './MoneyContext'
+const MoneyState = (props) => {
+  const money = 50000;
+  const bankBalance = 100000;
+  const name = 'superman'
+  const [counter, setCounter] = useState(0);
+  const component = "district"
   return (
-    <div>MoneyState</div>
+    <MoneyContext.Provider value={{money,bankBalance,name,counter,setCounter,component}}>
+      {props.children}
+    </MoneyContext.Provider>
   )
 }
 
