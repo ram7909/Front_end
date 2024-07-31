@@ -9,7 +9,6 @@ export const getProducts = (req, res) => {
 export const addProducts = async (req, res) => {
     const { title, description, price, qty, img } = req.body;
     let product = await Product.create({ title, description, price, qty, img })
-
     res.json({
         message: "product add succesfully",
         product,

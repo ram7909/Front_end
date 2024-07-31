@@ -2,19 +2,17 @@
 // M = Model - (DB Schema)
 // V = Views - Client (React App)
 // C = Controllers  - (functions)
-
 import express from 'express'
 import mongoose from 'mongoose';
 import bodyParse from 'express';
 import productRouter from './routes/product.js'
-
+import carRouter from './routes/car.js'
 const app = express();
 app.use(bodyParse.json())
 
-
 // Product Router
 app.use('/api/products',productRouter)
-
+app.use('/api/cars',carRouter)
 
 mongoose
     .connect("mongodb://localhost:27017", {
