@@ -40,3 +40,29 @@ export const getProductById = async (req, res) => {
         res.json({ message: "Internal Server Error", success: false })
     }
 }
+
+// Delete Product By Id
+export const deleteProduct = async (req, res) => {
+    const id = req.params.id
+    try {
+        let product = await Product.findByIdAndDelete(id);
+        if (!product) return res.json({ message: "Invalid Id", success: false })
+        res.json({ message: " Your Product Has Been Deleted", product, success: true })
+    }
+    catch (error) {
+        res.json({ message: "Internal Server Error", success: false })
+    }
+}
+
+// Edit Product By Id
+export const editProduct = async (req, res) => {
+    const id = req.params.id
+    try {
+        let product = await Product.findByIdAndUpdate(id);
+        
+        res.json({ message: " Your Product Has Been Updated", product, success: true })
+    }
+    catch (error) {
+        res.json({ message: "Internal Server Error", success: false })
+    }
+}
