@@ -1,5 +1,5 @@
 import express from "express";
-import { addProducts, deleteProduct, getProductById, getProducts } from "../controllers/product.js";
+import { addProducts, deleteProduct, editProduct, getProductById, getProducts } from "../controllers/product.js";
 
 const router = express.Router()
 
@@ -23,5 +23,9 @@ router.post('/add',addProducts)
 // @desc - to delete product
 router.delete('/:id',deleteProduct)
 
+// @method - edit
+// @route - /api/products/:id
+// @desc - to edit product
+router.put('/:id',editProduct)
 
 export default router;
