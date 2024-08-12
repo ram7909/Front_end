@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="nav">
-      <div className="nav_bar">
+    <div className="nav-bar p-2" style={{borderBottom:'2px solid yellow'}}>
+      <div className="d-flex align-items-center px-5" style={{justifyContent:'space-between'}}>
         <div className="left">
-          <Link to={"/"}>Shopping Cart</Link>
+          <Link to={"/"} style={{fontSize:'25px'}}>Shopping Cart</Link>
         </div>
         <div className="right">
           <Link to={"/add"} className="btn btn-primary mx-2">

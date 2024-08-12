@@ -7,7 +7,6 @@ const ProductState = (props) => {
     useEffect(() => {
         const fetchDataFromAPI = async () =>{
             const api = await axios.get(`${url}/products/get`)
-            console.log("products = ", api.data.product);
             setProducts(api.data.product)
         };
         fetchDataFromAPI();
