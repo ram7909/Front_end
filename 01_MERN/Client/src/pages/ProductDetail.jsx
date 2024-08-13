@@ -36,6 +36,10 @@ const ProductDetail = () => {
                                     <p className="card-text">{e.qty}</p>
                                     <p className="card-text">{e.createdAt}</p>
                                 </div>
+                                <div>
+                                    <button className='btn btn-warning mx-2'>Buy Now</button>
+                                    <button className='btn btn-primary mx-2'>Add To Cart</button>
+                                </div>
                             </div>
                         </div>
                     </div>

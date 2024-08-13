@@ -3,8 +3,10 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-      <footer className="bd-footer py-4 py-md-5 mt-5 bg-dark text-light">
-        <div className="container py-4 py-md-5 px-4 px-md-3 text-body-secondary bg-dark">
+      <footer className="bd-footer py-4 py-md-5 mt-5 bg-black text-light" style={{
+        borderTop:'2px solid yellow'
+      }}>
+        <div className="container py-4 py-md-5 px-4 px-md-3 bg-black text-light">
           <div className="row">
             <div className="col-lg-3 mb-3">
               <a

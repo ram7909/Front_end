@@ -13,6 +13,17 @@ const ProductState = (props) => {
     }, [])
     
 
+    // user register
+
+    // user login
+
+    // add product
+
+    // delete product by id
+
+    // edit product by id
+    
+
     return (
         <ProductContext.Provider value={{products }}>
             {props.children}

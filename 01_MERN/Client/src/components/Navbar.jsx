@@ -9,7 +9,7 @@ const Navbar = () => {
           <Link to={"/"} style={{fontSize:'25px'}}>Shopping Cart</Link>
         </div>
         <div className="right">
-          <Link to={"/add"} className="btn btn-primary mx-2">
+          <Link to={"/addproduct"} className="btn btn-primary mx-2">
             Add Product
           </Link>
           <Link to={"/login"} className="btn btn-secondary mx-2">
