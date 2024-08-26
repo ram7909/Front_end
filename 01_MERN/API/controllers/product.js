@@ -14,9 +14,9 @@ export const getProducts = async (req, res) => {
 
 // Add Product
 export const addProducts = async (req, res) => {
-    const { title, description, price, qty, img } = req.body;
+    const { title, description, price, qty, img,category } = req.body;
     try {
-        let product = await Product.create({ title, description, price, qty, img })
+        let product = await Product.create({ title, description, price, qty, img ,category})
         res.json({
             message: "product add succesfully",
             product,

@@ -6,6 +6,7 @@ import express from 'express'
 import mongoose from 'mongoose';
 import bodyParse from 'express';
 import productRouter from './routes/product.js'
+import userRouter from './routes/user.js'
 import cors from 'cors'
 const app = express();
 app.use(bodyParse.json())
@@ -17,6 +18,9 @@ app.use(cors({
 
 // Product Router
 app.use('/api/products', productRouter)
+
+//User Router
+app.use('/api/user',userRouter)
 
 mongoose
     .connect("mongodb://localhost:27017", {

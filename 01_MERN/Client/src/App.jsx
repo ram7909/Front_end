@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Footer from "./pages/Footer";
 import ProductDetail from "./pages/ProductDetail";
 import AddProduct from "./pages/AddProduct";
+import AdminProduct from "./Admin/Product"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/addproduct" element={<AddProduct />}/>
+        <Route path='/admin' element={<AdminProduct />} />
       </Routes>
       <Footer />
     </Router>

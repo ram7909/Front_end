@@ -20,7 +20,7 @@ const ProductDetail = () => {
                 display:'flex',
                 alignItems:'center',
                 justifyContent:'center',
-                height:'50vh'
+                height:'80vh'
             }}>
                 {product.map((e) => <div key={e._id}>
                     <div className="card p-3 mb-3 bg-dark text-light" style={{ width: '540px' }}>
