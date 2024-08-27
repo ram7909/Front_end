@@ -1,5 +1,9 @@
 import { User } from "../Models/User.js";
-import bcrypt from 'bcryptjs'
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+
+
+
 // user register
 export const register = async (req, res) => {
     const { name, email, phone, password } = req.body;
@@ -21,14 +25,34 @@ export const login = async (req, res) => {
     const { email, password } = req.body
     try {
         let user = await User.findOne({ email });
+
         if (!user) return res.json({ message: 'User not exist', success: false });
+
         const validPassword = await bcrypt.compare(password, user.password)
+
         if (!validPassword) return res.json({ message: 'Invalid Credentials' })
-        res.json({ message: `Welcome ${user.name} Login Successfull`, success: true })
+
+        var token = jwt.sign({ userId: user._id }, '!&*^*hbjh543%^&');
+
+        res.json({ message: `Welcome ${user.name}`, token, success: true })
     } catch (error) {
         res.json({ message: 'Internal Server Error', success: false })
     }
 }
+
+// User Profile
+export const profile = async (req, res) => {
+    const token = req.header("auth");
+    if (!token) return res.json({ message: 'Login First', success: false })
+    let decoded = jwt.verify(token, '!&*^*hbjh543%^&');
+    const id = decoded.userId
+
+    const user = await User.findById(id)
+    const { name, email } = user
+
+    res.json({ message: `welcome ${name}`, name, email, success: true })
+}
+
 
 
 // forgot password
