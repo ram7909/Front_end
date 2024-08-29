@@ -9,6 +9,7 @@ import AddProduct from "./pages/AddProduct";
 import AdminProduct from "./Admin/Product"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Profile from "./pages/Profile";
+import EditProduct from "./Admin/EditProduct";
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/addproduct" element={<AddProduct />}/>
         <Route path='/admin' element={<AdminProduct />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path='/admin/edit/:id' element={<EditProduct />} />
       </Routes>
       <Footer />
     </Router>

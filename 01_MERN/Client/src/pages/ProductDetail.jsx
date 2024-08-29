@@ -4,7 +4,7 @@ import axios from 'axios'
 const ProductDetail = () => {
     const { id } = useParams();
     const [product, setProduct] = useState([])
-    const url = 'http://localhost:1000/api'
+    const url = 'https://mern-api-batch-4.onrender.com/api'
     useEffect(() => {
         const fetchDataFromAPI = async () => {
             const api = await axios.get(`${url}/products/${id}`)

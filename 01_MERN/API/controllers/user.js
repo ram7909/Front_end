@@ -32,7 +32,7 @@ export const login = async (req, res) => {
 
         if (!validPassword) return res.json({ message: 'Invalid Credentials' })
 
-        var token = jwt.sign({ userId: user._id }, '!&*^*hbjh543%^&');
+        var token = jwt.sign({ userId: user._id }, process.env.JWT_Secret);
 
         res.json({ message: `Welcome ${user.name}`, token, success: true })
     } catch (error) {
@@ -44,7 +44,7 @@ export const login = async (req, res) => {
 export const profile = async (req, res) => {
     const token = req.header("auth");
     if (!token) return res.json({ message: 'Login First', success: false })
-    let decoded = jwt.verify(token, '!&*^*hbjh543%^&');
+    let decoded = jwt.verify(token, process.env.JWT_Secret);
     const id = decoded.userId
 
     const user = await User.findById(id)

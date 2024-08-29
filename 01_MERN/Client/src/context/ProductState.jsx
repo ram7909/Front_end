@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ProductContext from './ProductContext'
 import axios from 'axios'
 const ProductState = (props) => {
-    const url = "http://localhost:1000/api";
+    const url = "https://mern-api-batch-4.onrender.com/api";
     const [products, setProducts] = useState([])
     const [profile, setProfile] = useState({})
     const [reload, setReload] = useState(false)
@@ -23,13 +23,13 @@ const ProductState = (props) => {
             setIsAuthenticate(true)
         }
         const fetchprofileFromAPI = async () => {
-            const api = await axios.get(`${url}/user/profile`,{
-                headers:{
-                    "Content-Type":"application/json",
-                    auth:token
+            const api = await axios.get(`${url}/user/profile`, {
+                headers: {
+                    "Content-Type": "application/json",
+                    auth: token
                 }
             })
-            console.log("user data",api.data);
+            console.log("user data", api.data);
             setProfile(api.data)
         };
         fetchprofileFromAPI();
@@ -113,10 +113,10 @@ const ProductState = (props) => {
 
 
     // edit product by id
-
+    
 
     return (
-        <ProductContext.Provider value={{ products, addProduct, deleteProduct, register, login, isAuthenticate, setIsAuthenticate,setToken,profile }}>
+        <ProductContext.Provider value={{ products, addProduct, deleteProduct, register, login, isAuthenticate, setIsAuthenticate, setToken, profile, url,reload,setReload }}>
             {props.children}
         </ProductContext.Provider>
     )

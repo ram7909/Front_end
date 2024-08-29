@@ -1,6 +1,7 @@
 import React from "react";
 import ProductContext from "../context/ProductContext";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const Product = () => {
     const { products, deleteProduct } = useContext(ProductContext);
@@ -39,7 +40,7 @@ const Product = () => {
                                 </div>
                                 <div className="btn-">
 
-                                    <button className="btn btn-outline-warning mx-3">Edit</button>
+                                    <Link to={`/admin/edit/${e._id}`} className="btn btn-outline-warning mx-3" >Edit</Link>
 
                                     <button className="btn btn-danger mx-2"
                                         onClick={async () => {
